@@ -335,14 +335,15 @@ footer nav ul li a:hover {
     color: #fb806e;
 }
 .contact-section {
-    margin: 0 0 0 540px;
+    display: flex;
     justify-content: center;
+    margin-top: 150px;
 }
 .contact-section h1 p {
     color: #252424;
 }
 .contact-section button {
-    margin: 0 0 10px 180px;
+   margin: 0 0 20px 35%
 }
 .questions {
     color: #fb806e;

@@ -18,8 +18,8 @@
     <!-- Main Stylesheets -->
     <link href="css/slicknav.min.css" rel="stylesheet" type="text/css">
     <link href="css/reset.css" rel="stylesheet" type="text/css">
-    <link href="css/responsive.css" rel="stylesheet" type="text/css">
     <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="css/responsive.css" rel="stylesheet" type="text/css">
 </head>
 
 <body id="main">
@@ -45,16 +45,19 @@
         </div>
     </header>
     <section class="p-5 bg-light">
+        <style>
+            @media screen and (max-width: 770px) {
+                .slicknav_menu {
+                    margin-top: 0px;
+                }
+
+                header {
+                    margin-top: 0px;
+                    background-color: #252424;
+                }
+            }
+        </style>
         <div class="container-fluid">
-            <!-- title -->
-            <div class="row">
-                <div class="col text-center mb-3">
-                    <h1 class="text-warning display-2">Contact Us</h1>
-                    <p class="lead text-secondary">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam, a.
-                        Omnis, numquam!</p>
-                </div>
-            </div>
-            <!-- end of title -->
             <div class="contact-section">
                 <div class="col-lg-6 col-md-8 col-sm-10">
                     <div class="text-center text-secondary">
@@ -76,7 +79,8 @@
                             <label for="message">Message</label>
                             <textarea class="form-control" id="message" rows="3"></textarea>
                         </div>
-                        <button class="btn primary-button2" type="submit"><a href="index.html">Submit Question</a></button>
+                        <button class="btn primary-button2" type="submit"><a href="index.html">Submit
+                                Question</a></button>
                     </form>
                 </div>
             </div>

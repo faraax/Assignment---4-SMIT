@@ -1,65 +1,262 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+<html lang="en">
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/7.14.5/firebase-app.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/7.14.5/firebase-auth.js"></script>
-    <script defer src="/__/firebase/7.14.5/firebase-database.js"></script>
-    <script defer src="/__/firebase/7.14.5/firebase-messaging.js"></script>
-    <script defer src="/__/firebase/7.14.5/firebase-storage.js"></script>
-    <!-- initialize the SDK after all desired features are loaded -->
-    <script defer src="/__/firebase/init.js"></script>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>007 Digitizing</title>
+	<!-- css styles -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<script type="text/javascript" src="js/respond.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,700,800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<!-- Owl Carousel -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<!-- <link rel="stylesheet" href="css/owl.theme.default.min.css"> -->
+	<script src="js/owl.carousel.min.js"></script>
+	<!-- Main Stylesheets -->
+	<link href="css/slicknav.min.css" rel="stylesheet" type="text/css">
+	<link href="css/reset.css" rel="stylesheet" type="text/css">
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<link href="css/responsive.css" rel="stylesheet" type="text/css">
+</head>
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
-    </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
+<body id="main">
+	<!-- body content -->
+	<header class="secondary-black-bg">
+		<div class="container">
+			<div class="row">
+				<a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="logo"></a>
+				<nav class="navbar navbar-expand-sm">
+					<ul class="navbar-nav" id="menu">
+						<li class="nav-item"><a href="index.html">Home</a></li>
+						<li class="nav-item"><a href="shop.html">Shop</a></li>
+						<!-- <li class="nav-item"><a href="services.html">Services</a></li> -->
+						<li class="nav-item"><a href="portfolio.html">Portfolio</a></li>
+						<!-- <li class="nav-item"><a href="team.html">Team</a></li> -->
+						<li class="nav-item"><a href="contact.html">Contact</a></li>
+						<!-- <button class="btn header-button"><a href="#">Login</a></button> -->
+					</ul>
+				</nav>
+				<div class="clearfix">
+				</div>
+			</div>
+		</div>
+	</header>
+	<section class="slider" id="home">
+		<ul class="img1">
+			<li class="img-fluid">
+				<h1 class="slidertitle-secondary-white">We <span class="slidertitle-primary"> Design </span><br>Your
+					Business<span class="slidertitle-primary">.</span></h1>
+				<p class="secondary-white">007 Digitizing is Digital Marketing Agency for designing Embroidery, Vector,
+					T-Shirt<br>Design, Web Design & Development & much more. 007 Digitizing Provides its first<br>design
+					for free no matter where you are.</p>
+				<button class="btn primary-button"><a href="contact.html" target="_blank">Get Your First Free Design</a></button>
+			</li>
+		</ul>
+	</section>
+	<section class="services section-padding" id="services">
+		<div class="services-header">
+			<h1 class="services-primary"><span class="services-secondary">Our </span>Services</h1>
+		</div>
+		<div class="services-content">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">
+						<p><img src="img/icons/emb.png" alt="digitizing"></p>
+						<h3 class="services-secondary">Embroidery Digitizing</h3>
+						<p>We offer custom embroidery digitizing services through hand digitizing process to ensure the
+							digitized design meets the value for money. We strictly discourage the use of auto
+							embroidery functions for any job order.</p>
+					</div>
+					<div class="col-md-4">
+						<p><img src="img/icons/vector.png" alt="vector"></p>
+						<h3 class="services-secondary">Vector Art Design</h3>
+						<p>We convert raster graphics, pictures & images into scalable Vector files. Our standard
+							turnaround is 12 hours. We are also available through email practically 24x7. We will give
+							your order top priority.</p>
+					</div>
+					<div class="col-md-4">
+						<p><img src="img/icons/graphic-design.png" alt="web design"></p>
+						<h3 class="services-secondary">Web Design</h3>
+						<p>We also offer Web UI Design Services through our experienced Designers and can convert UI to
+							HTML form.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Services Sections -->
+	<section class="img2">
+		<div class="container">
+			<div class="section-head" id="portfolio">
+				<h2><span class="secondary-white">Our </span>Work</h2>
+				<p style="text-align: center">007 digitizing has got expertise in weaving digitizing , logos ,
+					converting rasters to vectors for sweatshirts, hoodies, polo shirts, coats, canvas tote packs,
+					baseball caps, color Sublimation, Direct To Garment and lowlife cut vinyl printing and significantly
+					more.</p>
+			</div>
+			<div class="carousel-row">
+				<div class="owl-carousel">
+					<div class="latest-post ">
+						<div class="post-col">
+							<div class="post-inner-col">
+								<img src="img/portfolio/Vector Arts/10 House.jpg" alt="Post Name" class="image">
+								<div class="post-meta">
+									<h4>Grand Motel gets an identity brushup</h4>
+									<p>Indendity</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="latest-post">
+						<div class="post-col">
+							<div class="post-inner-col">
+								<img src="img/portfolio/Embriodery/AEP trident.PNG" alt="Post Name" class="image">
+								<div class="post-meta">
+									<h4>Grand Motel gets an identity brushup</h4>
+									<p>Indendity</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="latest-post">
+						<div class="post-col">
+							<div class="post-inner-col">
+								<img src="img/portfolio/Embriodery/Big Bank.PNG" alt="Post Name" class="image">
+								<div class="post-meta">
+									<h4>Grand Motel gets an identity brushup</h4>
+									<p>Indendity</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="latest-post">
+						<div class="post-col">
+							<div class="post-inner-col">
+								<img src="img/portfolio/Vector Arts/projectmain2.png" alt="Post Name" class="image">
+								<div class="post-meta">
+									<h4>Grand Motel gets an identity brushup</h4>
+									<p>Indendity</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="latest-post">
+						<div class="post-col">
+							<div class="post-inner-col">
+								<img src="img/portfolio/Embriodery/project3.png" alt="Post Name" class="image">
+								<div class="post-meta">
+									<h4>Grand Motel gets an identity brushup</h4>
+									<p>Indendity</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="latest-post">
+						<div class="post-col">
+							<div class="post-inner-col">
+								<img src="img/portfolio/Vector Arts/projectmain1.png" alt="Post Name" class="image">
+								<div class="post-meta">
+									<h4>Grand Motel gets an identity brushup</h4>
+									<p>Indendity</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="latest-post">
+						<div class="post-col">
+							<div class="post-inner-col">
+								<img src="img/portfolio/Embriodery/project4.png" alt="Post Name" class="image">
+								<div class="post-meta">
+									<h4>Grand Motel gets an identity brushup</h4>
+									<p>Indendity</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="services section-padding" id="services">
+		<div class="services-header">
+			<h1 class="services-primary"><span class="services-secondary">Choose Your </span>Plan</h1>
+		</div>
+		<div class="container">
+			<div class="container-row">
+				<div class="box1">
+					<div class="icon"><img src="img/icons/box1.png" alt="Plan"></div>
+					<h2>Personal</h2>
+					<ol>
+						<li>1 Vector Or 1 Embroidery Design</li>
+					</ol>
+					<h3>$ 20</h3>
+					<button class="btn primary-button2"><a href="contact.html" target="_blank">Start Now</a></button>
+				</div>
+				<div class="box2">
+					<div class="icon"><img src="img/icons/box2.png" alt="Plan"></div>
+					<h3>Team</h3>
+					<ol>
+						<li>Vector Design</li>
+						<li>Embroidery Design</li>
+						<li>Animation</li>
+					</ol>
+					<h3>$ 30</h3>
+					<button class="btn primary-button2"><a href="contact.html" target="_blank">Start Now</a></button>
+				</div>
+				<div class="box3">
+					<div class="icon"><img src="img/icons/box3.png" alt="Plan"></div>
+					<h3>Corporate</h3>
+					<ol>
+						<li>Vector Design</li>
+						<li>Embroidery Design</li>
+						<li>Animation</li>
+						<li>Web Design</li>
+						<li>Web Development</li>
+						<li>Social Media Management</li>
+					</ol>
+					<h3>$ 40</h3>
+					<button class="btn primary-button2"><a href="contact.html" target="_blank">Start Now</a></button>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer class="secondary-black-bg">
+		<br>
+		<div class="container">
+			<a class="class" href="#"><img src="img/logo.png" alt="logo"></a><br>
+			<div class="row-footer">
+				<nav class="navbar navbar-expand-sm">
+					<ul class="navbar-nav" id="menu">
+						<li class="nav-item"><a href="index.html">Home</a></li>
+						<li class="nav-item"><a href="shop.html">Shop</a></li>
+						<!-- <li class="nav-item"><a href="services.html">Services</a></li> -->
+						<li class="nav-item"><a href="portfolio.html">Portfolio</a></li>
+						<!-- <li class="nav-item"><a href="team.html">Team</a></li> -->
+						<li class="nav-item"><a href="contact.html">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<div class="footer-text">
+			<p>007 Digitizing is Digital Marketing Agency for designing Embroidery, Vector,<br>
+				T-Shirt Design, Web Design & Development & much more. 007 Digitizing <br>
+				Provides its first design for free no matter where you are.</p>
+			<div class="footer-details" id="contact">
+				<p><img src="img/icons/email.png" alt="email"> maxconner007@gmail.com <img src="img/icons/contact.png"
+						alt="email"> 5304100051 <img src="img/icons/address.png" alt="email"> Redding, California</p>
+			</div>
+			<div class="copyright">
+				<p>Copyright © <span class="slidertitle-primary">007digitizer</span> 2020 . All Rights Reserved</p>
+			</div>
+		</div>
+	</footer>
+	<!-- javascripts -->
+	<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+	<script type="text/javascript" src="js/jquery.slicknav.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-
-        try {
-          let app = firebase.app();
-          let features = ['auth', 'database', 'messaging', 'storage'].filter(feature => typeof app[feature] === 'function');
-          document.getElementById('load').innerHTML = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          document.getElementById('load').innerHTML = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
 </html>

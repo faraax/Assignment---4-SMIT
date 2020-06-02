@@ -55,15 +55,14 @@
         background-color: rgba(0, 0, 0, 0);
         text-decoration: none;
     }
-    .slider,
+    /* .slider,
     .slider ul,
     .slider ul li {
         height: 100%;
-    }
+    } */
     .slider ul li h1 {
         margin-top: 100px;
         margin-bottom: 30px;
-
     }
     .container .box1 {
         position: relative;
@@ -105,23 +104,22 @@
     }    
 }
 @media screen and (max-width: 550px){ 
-    .slider,
+    /* .slider,
     .slider ul,
     .slider ul li {
         height: 100%;
-    }
+    } */
     .slider ul li h1 {
         margin-top: 40px;
         margin-bottom: 30px;
-
     }
 }
 @media screen and (max-width: 381px){ 
-    .slider,
+    /* .slider,
     .slider ul,
     .slider ul li {
         height: 100%;
-    }
+    } */
     .slider ul li h1 {
         margin-top: 40px;
         margin-bottom: 30px;
@@ -137,7 +135,6 @@
         bottom: 0;
         background: rgb(0, 0, 0);
         background: rgba(0, 0, 0, 0.5);
-        /* Black see-through */
         color: #f1f1f1;
         width: 280px;
         transition: .5s ease;
@@ -146,10 +143,6 @@
         font-size: 20px;
         padding: 10px 0px;
         text-align: center;
-        /* border-bottom-left-radius: 20px;
-        -webkit-border-bottom-left-radius: 20px;
-        -moz-border-bottom-left-radius: 20px;
-        -o-border-bottom-left-radius: 20px; */
     }
     
     .post-inner-col:hover .post-meta {
@@ -189,14 +182,27 @@
         display: none;
     }
 }
+@media screen and (max-width: 460px){ 
+    .contact-section button {
+        margin: 0 0 20px 30%
+     }
+}
+@media screen and (max-width: 320px){ 
+    .contact-section button {
+        margin: 0 0 20px 25%
+    }
+}
+@media screen and (max-width: 320px){ 
+    .contact-section button {
+        margin: 0 50px 0 55px
+    }
+}
 @media screen and (max-width: 349px) {
     .container-row {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         padding: 30px;
-        /* margin-left: 300px; */
-        /* margin-right: 300px; */
     }
     .container .box1 {
         margin-top: 100px;
