@@ -348,3 +348,25 @@ footer nav ul li a:hover {
 .questions {
     color: #fb806e;
 }
+
+/* =========================================
+   8. Footer
+   ========================================= */
+footer {
+    background-color: #222;
+    color: #f9f9f9;
+}
+
+footer a {
+    color: #bbb;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #fb806e;
+}
+
+.copyright {
+    color: #777;
+    font-size: 14px;
+}
